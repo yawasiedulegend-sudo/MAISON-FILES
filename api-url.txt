@@ -1,0 +1,2 @@
+Replace this file content with your live Render backend URL after deployment.
+Example: https://your-backend-url.onrender.com
