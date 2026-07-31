@@ -19,21 +19,35 @@
 
 ## 3. Connect a custom domain
 
+For the storefront site on GitHub Pages:
 1. In your domain provider, add or update DNS records:
-   - For a root domain, create an A record pointing to GitHub Pages IPs.
-   - For a subdomain, create a CNAME record to <YOUR_USERNAME>.github.io.
+   - For a root domain, create an A record pointing to the GitHub Pages IPs `185.199.108.153`, `185.199.109.153`, `185.199.110.153`, and `185.199.111.153`.
+   - For a subdomain such as `www`, create a CNAME record pointing to `<YOUR_USERNAME>.github.io`.
 2. In GitHub Pages settings, enter the custom domain and enable HTTPS.
+
+For the backend API on Render:
+1. Add a subdomain such as `api.yourdomain.com` in Render.
+2. Create the corresponding DNS record at your provider, usually a CNAME to the Render-generated host or an A record if Render provides one.
+3. Wait for propagation and then enable HTTPS.
 
 ## 4. Host the backend
 
 Use Render, Railway, or Fly.io.
 
 Recommended steps for Render:
-1. Create a new Web Service.
+1. Sign in to Render and create a new Web Service.
 2. Connect the GitHub repository.
-3. Set the build command to: `pip install -r requirements.txt`
-4. Set the start command to: `python backend.py`
-5. Deploy.
+3. Select the repository that contains this project.
+4. Set the build command to: `pip install -r requirements.txt`
+5. Set the start command to: `python backend.py`
+6. Add the environment variable `PORT` with value `10000` if required by the platform.
+7. Deploy and copy the generated public URL.
+
+### Render DNS and custom domain
+1. In Render, open the service and go to Settings > Custom Domains.
+2. Add your custom subdomain such as `api.yourdomain.com`.
+3. Render will provide DNS values to add at your domain registrar.
+4. After the DNS records propagate, enable the custom domain in Render.
 
 ## 5. Update the live backend URL
 
