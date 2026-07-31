@@ -1,1 +1,1 @@
-window.MAISON_API_BASE_URL = 'https://YOUR_RENDER_BACKEND_URL';
+window.MAISON_API_BASE_URL = '';
