@@ -21,16 +21,21 @@
 
 For the storefront site on GitHub Pages:
 1. In your domain provider, add or update DNS records only after the domain is confirmed to be registered and active.
-2. For a root domain, create four A records pointing to the GitHub Pages IPs `185.199.108.153`, `185.199.109.153`, `185.199.110.153`, and `185.199.111.153`.
-3. For a subdomain such as `www`, create a CNAME record pointing to `<YOUR_USERNAME>.github.io`.
-4. In GitHub Pages settings, enter the custom domain only after the DNS change is live.
-5. Wait for DNS propagation and then enable HTTPS.
+2. For the root domain, create four A records pointing to the GitHub Pages IPs `185.199.108.153`, `185.199.109.153`, `185.199.110.153`, and `185.199.111.153`.
+3. For the `www` subdomain, create a CNAME record pointing to `yawasiedulegend-sudo.github.io`.
+4. Do not use an A record for `www.maisonboutique.com`; GitHub Pages will flag that as improperly configured.
+5. In GitHub Pages settings, enter the custom domain only after the DNS change is live.
+6. Wait for DNS propagation and then enable HTTPS.
 
 If GitHub shows an invalid DNS error, it usually means one of these is true:
 - the DNS record is still propagating,
 - the domain was entered incorrectly,
 - the CNAME or A record points to the wrong destination,
 - the domain has not been fully registered yet.
+
+For this project specifically, the correct DNS target is:
+- `www` -> `yawasiedulegend-sudo.github.io`
+- custom domain in GitHub Pages -> `www.maisonboutique.com`
 
 For the backend API on Render:
 1. Add a subdomain such as `api.yourdomain.com` in Render.
