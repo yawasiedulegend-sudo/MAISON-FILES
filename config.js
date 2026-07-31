@@ -1,1 +1,1 @@
-window.MAISON_API_BASE_URL = '';
+window.MAISON_API_BASE_URL = 'https://maison-boutique-api.onrender.com';
