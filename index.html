@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data: https:; style-src 'self' 'unsafe-inline'; script-src 'self'; connect-src 'self' https://wa.me; form-action 'self' https://wa.me; base-uri 'self'; object-src 'none'; frame-ancestors 'none';" />
+    <meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin" />
+    <meta http-equiv="X-Content-Type-Options" content="nosniff" />
+    <meta http-equiv="X-Frame-Options" content="DENY" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Maison Boutique offers premium fashion, quality craftsmanship, secure checkout, and direct WhatsApp ordering." />
+    <meta name="keywords" content="Maison Boutique, fashion, boutique, luxury clothing, Ghana fashion, stylish outfits" />
+    <meta name="theme-color" content="#3a1f1f" />
+    <meta name="robots" content="index, follow" />
+    <title>Maison Boutique</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <a class="brand" href="index.html">Maison Boutique</a>
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="shop.html">Shop</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="checkout.html" class="button small">Order Now</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div>
+          <p class="eyebrow">Luxury fashion with a personal touch</p>
+          <h1>Elevated style for every occasion.</h1>
+          <p class="hero-copy">Discover timeless pieces crafted for confidence, comfort, and modern beauty. All orders are handled with care, secure communication, and direct WhatsApp support.</p>
+          <div class="hero-actions">
+            <a class="button" href="shop.html">Explore Collection</a>
+            <a class="button secondary" href="https://wa.me/233540311036?text=Hello%20Maison%20Boutique%2C%20I%20would%20like%20to%20order%20a%20fashion%20piece." target="_blank" rel="noreferrer">Chat on WhatsApp</a>
+          </div>
+        </div>
+        <div class="hero-card">
+          <img src="MAISON BOUTIQUE/WhatsApp Image 2026-07-30 at 8.27.39 AM.jpeg" alt="Featured fashion presentation" />
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-heading">
+          <p class="eyebrow">Featured products</p>
+          <h2>Signature pieces styled for elegance</h2>
+        </div>
+        <div class="product-grid">
+          <article class="card">
+            <img src="MAISON BOUTIQUE/WhatsApp Image 2026-07-30 at 8.17.54 AM.jpeg" alt="Luxury evening wear" />
+            <div class="card-body">
+              <h3>Paris Evening Dress</h3>
+              <p>Soft tailoring, premium finish, and a graceful silhouette for formal events.</p>
+              <div class="meta-row"><strong>GH¢ 450</strong><span>In stock</span></div>
+              <div class="chip-row"><span>Sizes: S-M-L-XL-XXL</span><span>Colors: Black, Beige, Wine</span></div>
+              <div class="card-actions">
+                <button class="reaction-btn" data-product="Paris Evening Dress">Like</button>
+                <a class="button small" href="checkout.html">Buy Now</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="card">
+            <img src="MAISON BOUTIQUE/WhatsApp Image 2026-07-30 at 8.17.53 AM.jpeg" alt="Statement boutique outfit" />
+            <div class="card-body">
+              <h3>Golden Hour Set</h3>
+              <p>A polished fashion set designed for comfort and standout presence.</p>
+              <div class="meta-row"><strong>GH¢ 320</strong><span>Ready to ship</span></div>
+              <div class="chip-row"><span>Sizes: S-M-L-XL</span><span>Colors: Ivory, Gold, Espresso</span></div>
+              <div class="card-actions">
+                <button class="reaction-btn" data-product="Golden Hour Set">Like</button>
+                <a class="button small" href="checkout.html">Buy Now</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="card">
+            <img src="MAISON BOUTIQUE/TT354.jpeg" alt="Classic boutique attire" />
+            <div class="card-body">
+              <h3>Classic Luxe Tailoring</h3>
+              <p>Sharp lines and refined detailing for elegant everyday dressing.</p>
+              <div class="meta-row"><strong>GH¢ 380</strong><span>Limited stock</span></div>
+              <div class="chip-row"><span>Sizes: M-L-XL-XXL</span><span>Colors: Deep Navy, Cream, Rose</span></div>
+              <div class="card-actions">
+                <button class="reaction-btn" data-product="Classic Luxe Tailoring">Like</button>
+                <a class="button small" href="checkout.html">Buy Now</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section split-section">
+        <div>
+          <p class="eyebrow">Why customers return</p>
+          <h2>Quality, clarity, and trusted support</h2>
+          <ul class="feature-list">
+            <li>Authentic fashion pieces with premium finishing.</li>
+            <li>Flexible sizing from S to XXL with color options shown in the gallery.</li>
+            <li>Secure ordering guidance, direct customer support, and reliable payments.</li>
+          </ul>
+        </div>
+        <div class="panel">
+          <h3>Quick order steps</h3>
+          <ol>
+            <li>Select your preferred item.</li>
+            <li>Choose size, color, and quantity.</li>
+            <li>Confirm order through WhatsApp or the checkout page.</li>
+          </ol>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-heading">
+          <p class="eyebrow">Customer feedback</p>
+          <h2>Ratings and satisfaction</h2>
+        </div>
+        <form id="review-form" class="review-form" method="post">
+          <label>
+            Product
+            <select id="review-product" required>
+              <option value="Paris Evening Dress">Paris Evening Dress</option>
+              <option value="Golden Hour Set">Golden Hour Set</option>
+              <option value="Classic Luxe Tailoring">Classic Luxe Tailoring</option>
+            </select>
+          </label>
+          <label>
+            Rating
+            <select id="review-rating" required>
+              <option value="5">5 - Excellent</option>
+              <option value="4">4 - Very good</option>
+              <option value="3">3 - Good</option>
+              <option value="2">2 - Fair</option>
+              <option value="1">1 - Needs improvement</option>
+            </select>
+          </label>
+          <label>
+            Comment
+            <textarea id="review-comment" rows="4" placeholder="Share your satisfaction and styling experience" required></textarea>
+          </label>
+          <button class="button" type="submit">Leave Review</button>
+          <div id="review-status" class="status-message" aria-live="polite"></div>
+        </form>
+        <div id="review-list" class="review-list"></div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>Maison Boutique · Secure fashion ordering · WhatsApp: +233 540311036</p>
+    </footer>
+
+    <script src="config.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

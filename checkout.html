@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data: https:; style-src 'self' 'unsafe-inline'; script-src 'self'; connect-src 'self'; form-action 'self' https://wa.me; base-uri 'self'; object-src 'none'; frame-ancestors 'none';" />
+    <meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin" />
+    <meta http-equiv="X-Content-Type-Options" content="nosniff" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Place an order for Maison Boutique products with size, color, quantity, and availability details." />
+    <meta name="keywords" content="Maison Boutique checkout, order fashion, boutique sizes and colors" />
+    <meta name="robots" content="index, follow" />
+    <title>Checkout | Maison Boutique</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <a class="brand" href="index.html">Maison Boutique</a>
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="shop.html">Shop</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="checkout.html" class="button small">Order Now</a>
+      </nav>
+    </header>
+
+    <main class="page-shell">
+      <section class="section split-section">
+        <div>
+          <p class="eyebrow">Order details</p>
+          <h2>Reserve your favorite fashion piece</h2>
+          <form id="order-form" class="review-form" method="post">
+            <label>
+              Item
+              <select id="order-item" required>
+                <option value="Paris Evening Dress">Paris Evening Dress</option>
+                <option value="Golden Hour Set">Golden Hour Set</option>
+                <option value="Classic Luxe Tailoring">Classic Luxe Tailoring</option>
+                <option value="Velvet Charm Dress">Velvet Charm Dress</option>
+                <option value="Festive Luxe Set">Festive Luxe Set</option>
+              </select>
+            </label>
+            <label>
+              Size
+              <select id="order-size" required>
+                <option value="S">S</option>
+                <option value="M">M</option>
+                <option value="L">L</option>
+                <option value="XL">XL</option>
+                <option value="XXL">XXL</option>
+              </select>
+            </label>
+            <label>
+              Color
+              <input id="order-color" type="text" placeholder="Enter preferred color" required />
+            </label>
+            <label>
+              Quantity
+              <input id="order-quantity" type="number" min="1" max="10" value="1" required />
+            </label>
+            <label>
+              Contact number
+              <input id="order-phone" type="tel" placeholder="0240000000" required />
+            </label>
+            <button class="button" type="submit">Send order request</button>
+            <div id="order-status" class="status-message" aria-live="polite"></div>
+          </form>
+        </div>
+        <div class="panel">
+          <h3>Availability and payment</h3>
+          <ul class="feature-list">
+            <li>All sizes available: S, M, L, XL, XXL.</li>
+            <li>Colors available vary by style and are shared with customers on request.</li>
+            <li>Stock updates are confirmed before final shipment.</li>
+          </ul>
+          <p><strong>MTN Momo:</strong> 0540311036</p>
+          <p><strong>Account:</strong> Agyeiwaa Sandra</p>
+          <a class="button secondary" href="https://wa.me/233540311036?text=Hello%20Maison%20Boutique%2C%20I%20would%20like%20to%20confirm%20my%20order." target="_blank" rel="noreferrer">Confirm via WhatsApp</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>Maison Boutique · Secure order flow · WhatsApp: +233 540311036</p>
+    </footer>
+
+    <script src="config.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

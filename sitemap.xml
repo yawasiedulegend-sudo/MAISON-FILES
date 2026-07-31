@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://yourdomain.com/index.html</loc>
+  </url>
+  <url>
+    <loc>https://yourdomain.com/shop.html</loc>
+  </url>
+  <url>
+    <loc>https://yourdomain.com/about.html</loc>
+  </url>
+  <url>
+    <loc>https://yourdomain.com/contact.html</loc>
+  </url>
+  <url>
+    <loc>https://yourdomain.com/checkout.html</loc>
+  </url>
+</urlset>
