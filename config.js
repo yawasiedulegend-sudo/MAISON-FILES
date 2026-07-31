@@ -1,1 +1,2 @@
-window.MAISON_API_BASE_URL = 'https://maison-boutique-api.onrender.com';
+const isLocalDevelopment = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1';
+window.MAISON_API_BASE_URL = isLocalDevelopment ? '' : 'https://maison-boutique-api.onrender.com';
