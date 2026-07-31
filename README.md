@@ -9,3 +9,9 @@ This folder contains a polished static fashion website for Maison Boutique with:
 - Security-focused meta tags and a basic sitemap and robots file
 
 Open index.html in a browser to view the site.
+
+## Deployment
+
+- Frontend: GitHub Pages
+- Backend: Render, Railway, or Fly.io
+- API base: update config.js with the hosted backend URL
